@@ -1,0 +1,145 @@
+/* navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-family: "Viga", sans-serif;
+    font-size: 32px;
+}
+
+/* product */
+
+.product{
+    margin-top: 50px;
+}
+.product h2{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
+
+.card{
+    margin: auto;
+    padding:10px ;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.card a{
+    font-size: 12px;
+}
+
+.card-title{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.card-img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin : 0 auto;
+}
+
+.price{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.description{
+    color: #ACACAC;
+    font-size:small;
+}
+/* footer */
+.footer{
+    margin-top: 100px;
+}
+.footer p{
+    color: #ACACAC;
+    font-size: 18px;
+}
+/* utility */
+
+.tombol{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* desktop version  */
+
+@media (min-width : 992px){
+    .navbar-brand, .nav-link{
+        color: Black !important;
+        text-shadow: 1px 1px 1px rgb(221, 221, 221);
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after{
+        content: "";
+        display: block;
+        border-bottom: 3px solid #ffc107;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .active::after{
+        content: "";
+        display: block;
+        border-bottom: 3px solid #ffc107;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .product{
+    margin-top: 50px;
+    }
+
+    .product h2{
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .card{
+        padding:10px ;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        width: 18rem;
+        height: 575px;
+    }
+
+    .card-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-title{
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .price{
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .description{
+        font-size: small;
+        color: #ACACAC;
+    }
+
+    .modal-diaolg{
+        width: 1000px;
+    }
+
+}

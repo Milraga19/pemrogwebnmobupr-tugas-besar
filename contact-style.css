@@ -1,0 +1,64 @@
+/* navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-family: "Viga", sans-serif;
+    font-size: 32px;
+}
+
+/* contact */
+.title{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* footer */
+.footer{
+    margin-top: 100px;
+}
+.footer p{
+    color: #ACACAC;
+    font-size: 18px;
+}
+/* utility */
+
+.tombol{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* desktop version  */
+
+@media (min-width : 992px){
+    .navbar-brand, .nav-link{
+        color: Black !important;
+        text-shadow: 1px 1px 1px rgb(221, 221, 221);
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after{
+        content: "";
+        display: block;
+        border-bottom: 3px solid #ffc107;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .active::after{
+        content: "";
+        display: block;
+        border-bottom: 3px solid #ffc107;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+}

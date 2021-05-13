@@ -1,0 +1,121 @@
+/* navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-family: "Viga", sans-serif;
+    font-size: 32px;
+}
+
+/* team */
+.team{
+    margin-top: 50px;
+}
+
+.team h2{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
+
+.card{
+    margin: auto;
+    padding:10px ;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 18rem;
+    height: 500px;
+}
+/* .card img{
+    width: 350px;
+    height: 350px;
+} */
+.card-title{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.quote{
+    color: #ACACAC;
+    font-size:small;
+}
+/* footer */
+.footer{
+    margin-top: 100px;
+}
+.footer p{
+    color: #ACACAC;
+    font-size: 18px;
+}
+/* utility */
+
+.tombol{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* desktop version  */
+
+@media (min-width : 992px){
+    .navbar-brand, .nav-link{
+        color: Black !important;
+        text-shadow: 1px 1px 1px rgb(221, 221, 221);
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after{
+        content: "";
+        display: block;
+        border-bottom: 3px solid #ffc107;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .active::after{
+        content: "";
+        display: block;
+        border-bottom: 3px solid #ffc107;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .team{
+    margin-top: 50px;
+    }
+
+    .team h2{
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .card{
+        padding:10px ;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        width: 18rem;
+        height: 550px;
+    }
+
+    .card-title{
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .quote{
+        font-size: small;
+        color: #ACACAC;
+    }
+
+
+}
